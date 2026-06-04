@@ -1,0 +1,18 @@
+{
+  "name": "glua-claude-skill",
+  "owner": {
+    "name": "Alleexxi",
+    "url": "https://github.com/Alleexxi"
+  },
+  "plugins": [
+    {
+      "name": "glua",
+      "source": ".",
+      "description": "Expert Garry's Mod Lua (GLua) development skill with accurate GMod API signatures, client/server/menu realms, hooks, VGUI/derma panels, meta-table classes, enumerations and asset paths sourced from the official wiki.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Alleexxi"
+      }
+    }
+  ]
+}

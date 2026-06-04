@@ -1,0 +1,11 @@
+{
+  "name": "glua",
+  "version": "1.0.0",
+  "description": "Expert Garry's Mod Lua (GLua) development skill with accurate GMod API signatures, client/server/menu realms, hooks, VGUI/derma panels, meta-table classes, enumerations and asset paths sourced from the official wiki.",
+  "author": {
+    "name": "Alleexxi",
+    "url": "https://github.com/Alleexxi"
+  },
+  "repository": "https://github.com/Alleexxi/glua-claude-skill",
+  "license": "MIT"
+}

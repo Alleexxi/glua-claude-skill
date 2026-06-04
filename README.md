@@ -23,45 +23,47 @@ of guessing a signature or realm.
 
 Every member carries its exact signature, arguments, returns, per-member realm,
 and notes/warnings/bugs, and links back to its **wiki page** and **engine source**.
-Plus a hand-written [`references/guide.md`](references/guide.md): the realm model,
-addon folder structure, a recursive autoloader, the `net` library, `NetworkVar`,
-and SWEP/ENT/gamemode/derma skeletons.
+
 
 ## Install
 
-Clone (or copy) this repo into your Claude Code **user skills** folder so the
-directory is named `glua`:
+Pick whichever fits your workflow. After any method, start a new session and
+confirm with `/skills` (look for `glua`). The skill activates automatically on
+GLua questions, or explicitly via `/glua`.
+
+### Option A - Claude Code plugin (recommended)
+
+This repo doubles as a single-plugin marketplace. Inside Claude Code:
+
+```text
+/plugin marketplace add Alleexxi/glua-claude-skill
+/plugin install glua@glua-claude-skill
+```
+
+### Option B - `npx skills`
+
+The [`skills`](https://www.npmjs.com/package/skills) CLI installs from this repo
+into your agent's skills folder:
+
+```bash
+npx skills add Alleexxi/glua-claude-skill        # project-level (.claude/skills/)
+npx skills add Alleexxi/glua-claude-skill -g     # user-level (~/.claude/skills/)
+```
+
+### Option C - manual clone
+
+The skill lives at `skills/glua/` inside the repo, so copy *that* folder (not the
+repo root) into your skills directory:
 
 - **macOS / Linux:** `~/.claude/skills/glua`
 - **Windows:** `%USERPROFILE%\.claude\skills\glua`
 
 ```bash
-git clone https://github.com/Alleexxi/glua-claude-skill.git ~/.claude/skills/glua
+git clone https://github.com/Alleexxi/glua-claude-skill.git /tmp/glua-claude-skill
+cp -r /tmp/glua-claude-skill/skills/glua ~/.claude/skills/glua
 ```
 
-Claude Code auto-discovers it from `SKILL.md` on the next session. Confirm with
-`/skills` (look for `glua`). It activates automatically on GLua questions, or
-explicitly via `/glua`. You can also place it in a project's
-`.claude/skills/glua/` to scope it to one repository.
-
-## Provenance
-
-- **Generated:** the per-unit files under
-  `references/{classes,libraries,panels,hooks,enums}/`, `references/globals*.md`,
-  `references/assets/*`, and the baseline index tables in each category
-  `README.md` were produced by a build script from `wiki.json` (a merged dump of
-  the Facepunch wiki). The build tooling is maintained separately and is not part
-  of this skill-only repository.
-- **Hand-written:** `SKILL.md`, `references/guide.md`, and the curated overview
-  prose at the top of each category `README.md` and the top `references/README.md`.
-
-## Why `README.md` and not `CLAUDE.md`?
-
-`SKILL.md` is the skill manifest (required filename). The `README.md` files serve
-two purposes: GitHub renders them as per-folder landing pages, and they are the
-skill's on-demand **index** files (Claude reads them by path). `CLAUDE.md` is a
-separate feature - auto-loaded project memory for working *inside* a repo - and is
-not used for skill content.
+Use a project's `.claude/skills/glua/` instead to scope it to one repository.
 
 ## Attribution & license
 
