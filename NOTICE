@@ -1,0 +1,28 @@
+glua — Garry's Mod Lua expert skill for Claude Code
+Copyright (c) 2026 ahanr
+Licensed under the MIT License (see LICENSE).
+
+================================================================================
+Third-party content & attribution
+================================================================================
+
+The API reference data bundled under references/ (function signatures, argument
+and return descriptions, realms, notes/warnings/bugs, enum values, and the text
+of descriptions) is DERIVED FROM the community-maintained Garry's Mod wiki:
+
+    Garry's Mod Wiki — https://wiki.facepunch.com/gmod/
+    © Facepunch Studios Ltd. and wiki contributors.
+
+This skill condenses and reformats that documentation for offline use by a
+language model. Every reference entry links back to its canonical wiki page.
+
+Engine source links point to the Garry's Mod repository:
+
+    Facepunch/garrysmod — https://github.com/Facepunch/garrysmod
+
+The source `wiki.json` dump was obtained from the `vscode-glua-enhanced`
+project's resources.
+
+"Garry's Mod" and related marks are trademarks of Facepunch Studios Ltd. This
+project is not affiliated with or endorsed by Facepunch Studios. If you are a
+rights holder and have concerns about this redistribution, please open an issue.
