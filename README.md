@@ -36,7 +36,7 @@ directory is named `glua`:
 - **Windows:** `%USERPROFILE%\.claude\skills\glua`
 
 ```bash
-git clone https://github.com/<you>/glua.git ~/.claude/skills/glua
+git clone https://github.com/Alleexxi/glua-claude-skill.git ~/.claude/skills/glua
 ```
 
 Claude Code auto-discovers it from `SKILL.md` on the next session. Confirm with
